@@ -5,7 +5,7 @@ Evaluacion jessica.gonzalez@analyticalways.com
 
 
 
-Existen dos opciones Desarrolladas:
+Existen dos opciones Desarrolladas en --->(Program.cs)<---:
 
 1. Codigo sin comentar, se hace la descarga del CSV, se vacia la tabla valores y por ultimo se hace el bulk insert en la 
 BD local del archivo CSV descargado en la ubicacion local.
@@ -16,8 +16,8 @@ procede a insertar linea por linea en la base de datos local.
 
 
 DECISION: la opcion 1 debido a que le doy la responsabilidad a sql server para que haga el bulk insert de manera 
-eficiente por la cantidad IMPORTANTE de registros. Laopcion 2 por el contrario me demoro mas tiempo en procesar por 
-generar cada inserto por linea desde el bucle con C#.
+eficiente por la cantidad IMPORTANTE de registros. La opcion 2 por el contrario me demoro mas tiempo en procesar por 
+generar cada insert por cada linea desde el bucle con C#.
 
 
 
