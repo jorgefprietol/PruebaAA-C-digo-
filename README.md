@@ -16,7 +16,8 @@ procede a insertar linea por linea en la base de datos local.
 
 Test Result:
 
+Resultado final de la prueba en 42 Minutos. (37 minutos descargando el archivo y 5 minutos bulk insert).
 
 <div align="center">
-           <img width="45%" src="img/captura.png"</img>
+           <img width="75%" src="img/captura.png"</img>
 </div>
