@@ -44,9 +44,6 @@ namespace ConsoleApp
                     Console.WriteLine("\n3 - Insertar datos nuevos en la tabla:");
                     Console.WriteLine("=========================================\n");
                     StringBuilder sb2 = new StringBuilder();
-                    /*string[] separators = {";"};
-                    string[] Valores = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);*/
-                    //sb.Append("INSERT INTO valores(valor1,valor2,valor3,valor4) VALUES('"+ Valores[0]+"','"+ Valores[1]+"','"+ Valores[2]+"','"+ Valores[3]+"');");
                     sb2.Append("BULK INSERT valores FROM 'C:\\Users\\jorge\\source\\repos\\ConsoleApp\\bin\\Debug\\netcoreapp3.1\\Stock.CSV' WITH(FIRSTROW = 2, DATAFILETYPE = 'char', FIELDTERMINATOR = ';', ROWTERMINATOR = '\n', batchSize = 10000); ");
                     String sql2 = sb2.ToString();
                     using SqlCommand command2 = new SqlCommand(sql2, connection);
